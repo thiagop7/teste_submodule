@@ -12,8 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with: 
-          repository: org/parent_repository
-          token: ${{ secrets.PRIVATE_TOKEN_GITHUB }}
+          repository: thiagop7/teste_monorepo
+          token: ${{ secrets.GITHUB_TOKEN }}
           submodules: true
 
       - name: Pull & update submodules recursively
